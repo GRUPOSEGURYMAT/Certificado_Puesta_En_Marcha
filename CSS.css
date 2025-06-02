@@ -1,0 +1,352 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  font-size: 12px;
+}
+
+.todoglobal {
+  max-width: 10.5in;
+  margin: 0 auto;
+  padding: 0.3in;
+  color: #333;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
+
+.cert-container {
+  page-break-before: always;
+  page-break-after: always;
+  box-sizing: border-box;
+  min-height: 7.7in;
+}
+
+.cert-container:last-child {
+  page-break-after: auto;
+}
+
+.header {
+  background: #b3e6fa;
+  color: #007fa3;
+  font-weight: bold;
+  padding: 6px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.table, .footer-table, .aclaraciones, .dexa-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 10px 0;
+  page-break-inside: avoid;
+  max-width: 10.2in;
+}
+
+.certificado-container {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid #b3e6fa;
+  box-shadow: 0 2px 8px #b3e6fa44;
+}
+
+.certificado-header {
+  display: flex;
+  align-items: center;
+  background: #7dd5fb;
+  color: #fff;
+  padding: 12px 20px;
+}
+
+.certificado-header {
+  height: 40px;
+  margin-right: 18px;
+}
+
+.titulo-principal {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-align: left;
+}
+.titulo-principal input {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+  width: 100%;
+  outline: none;
+}
+.input-title { font-size: 1.2em; font-weight: bold; }
+.input-subtitle { font-size: 1em; font-weight: normal; }
+
+.certificado-grid {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  background: #f8fcff;
+  border-bottom: 4px solid #7dd5fb;
+}
+
+.certificado-label {
+  background: #39b4e6;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 8px;
+  border-bottom: 1px solid #b3e6fa;
+  font-size: 1em;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.certificado-content {
+  padding: 12px 12px;
+  border-bottom: 1px solid #b3e6fa;
+  font-size: 0.98em;
+}
+.certificado-content input,
+.certificado-content textarea {
+  border: none;
+  border-bottom: 1px solid #b3e6fa;
+  font-size: 1em;
+  background: transparent;
+  color: #222;
+  margin-bottom: 2px;
+  width: auto;
+  min-width: 70px;
+  max-width: 95%;
+  outline: none;
+  resize: none;
+}
+.desc-empresa textarea {
+  width: 100%;
+  min-height: 30px;
+  font-size: 0.93em;
+  color: #555;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #b3e6fa;
+  outline: none;
+}
+
+.tabla-sistemas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0;
+  font-size: 0.98em;
+}
+
+.tabla-sistemas th {
+  background: #39b4e6;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 8px 3px;
+  border: 1px solid #b3e6fa;
+  font-size: 0.95em;
+}
+.tabla-sistemas td {
+  background: #fff;
+  color: #222;
+  text-align: center;
+  padding: 8px 3px;
+  border: 1px solid #b3e6fa;
+  font-size: 0.97em;
+}
+.tabla-sistemas td input {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #b3e6fa;
+  background: transparent;
+  color: #222;
+  text-align: center;
+  font-size: 0.97em;
+  outline: none;
+}
+.tabla-sistemas td:first-child {
+  text-align: left;
+  font-weight: bold;
+  color: #005580;
+}
+
+.footer-table th, .footer-table td {
+  border: 1px solid #b5e1f7;
+  text-align: center;
+  padding: 4px;
+  font-size: 11px;
+}
+
+.footer-table th {
+  background: #39b4e6;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-table .system {
+  text-align: left;
+  padding-left: 8px;
+  background: #f3faff;
+  font-weight: bold;
+  color: black;
+}
+
+.footer-table .anomalies {
+  background: #b5e1f7;
+  color: #222;
+}
+
+.footer-table img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+button {
+  margin: 10px;
+  padding: 6px 12px;
+}
+
+@media print {
+  .todoglobal {
+    max-width: 10.5in;
+    padding: 0.3in;
+    margin: 0;
+  }
+  button {
+    display: none;
+  }
+  .cert-container {
+    page-break-before: always;
+    page-break-after: always;
+  }
+  .cert-container:last-child {
+    page-break-after: auto;
+  }
+  .table, .footer-table, .aclaraciones, .dexa-table {
+    page-break-inside: avoid;
+  }
+}
+
+footer {
+  background-color: #7dd5fb;
+  height: 60px;
+  text-align: center;
+  color: #000;
+  font-size: 11px;
+  line-height: 1.2;
+  page-break-inside: avoid;
+  margin-top: 8px;
+  padding-bottom: 25px;
+  opacity: 0.6;
+}
+
+.logo-img{
+  display: block; 
+  margin-left: 0; 
+  width: 80px; 
+  height: 35px;
+}
+
+.subheader {
+  background: #e60000;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 12px;
+}
+
+table th, table td {
+  border: 1px solid #c0c0c0;
+  padding: 2px 3px;
+  font-size: 10px;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+table th {
+  background-color: #e60000;
+}
+
+table.dexa-table th, table.dexa-table td {
+  max-width: 0.35in;
+  min-width: 0.3in;
+  font-size: 6px;
+  padding: 1px 2px;
+}
+
+table.dexa-table th {
+  background: #e60000;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.observaciones {
+  background: #e60000;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px;
+  font-size: 12px;
+  max-width: 10.2in;
+}
+
+.aclaraciones th, .aclaraciones td {
+  background: #fff;
+  color: #000;
+  text-align: left;
+  font-size: 8px;
+  padding: 1px 2px;
+}
+
+.aclaraciones th {
+  background: #e60000;
+  color: #fff;
+}
+
+img {
+  width: 150px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  flex-shrink: 0;
+}
+
+input, textarea {
+  border: 1px solid #c0c0c0;
+  padding: 2px;
+  font-size: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .todoglobal {
+    padding: 10px;
+    max-width: 100%;
+  }
+  table.dexa-table th, table.dexa-table td {
+    font-size: 5px;
+    min-width: 0.2in;
+  }
+}
+
+img{
+  width: 20px;
+  height: 20px;
+}
