@@ -248,7 +248,7 @@ footer {
 }
 
 .subheader {
-  background: #e60000;
+  background: #39b4e6;
   color: #fff;
   font-weight: bold;
   padding: 5px;
@@ -265,7 +265,7 @@ table th, table td {
 }
 
 table th {
-  background-color: #e60000;
+  background-color: #39b4e6;
 }
 
 table.dexa-table th, table.dexa-table td {
@@ -276,14 +276,14 @@ table.dexa-table th, table.dexa-table td {
 }
 
 table.dexa-table th {
-  background: #e60000;
+  background: #39b4e6;
   color: #fff;
   font-weight: bold;
   line-height: 1.2;
 }
 
 .observaciones {
-  background: #e60000;
+  background: #39b4e6;
   color: #fff;
   font-weight: bold;
   padding: 5px;
@@ -300,7 +300,7 @@ table.dexa-table th {
 }
 
 .aclaraciones th {
-  background: #e60000;
+  background: #39b4e6;
   color: #fff;
 }
 
